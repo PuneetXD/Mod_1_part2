@@ -1,0 +1,308 @@
+/* universal styling */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* applying border-box to universal selector */
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* styling common container */
+.container{
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+/* liniking the font faces in the local system */
+@font-face {
+    font-family: WorkSansbold;
+    src: url(../font/WorkSans-SemiBold.woff);
+}
+@font-face {
+    font-family: Noticabold;
+    src: url(../font/NoticiaText-Bold.woff);
+}
+@font-face {
+    font-family: WorkSansregular;
+    src: url(../font/WorkSans-Regular.woff);
+}
+@font-face {
+    font-family: WorkSansmedium;
+    src: url(../font/WorkSans-Medium.woff);
+}
+
+/* styling the mobe info section */
+.mobe-info{
+    padding: 100px 0px;
+    background-color: #78C51D;
+}
+
+/* styling the top section the main mobe-info section */
+.mobe-top{
+    display: flex;
+    background-color: #2A6F2C;
+    padding: 50px;
+    border-radius: 16px;
+    justify-content: flex-start;
+}
+
+/* styling the top section the main mobe-info section */
+.mobe-top >img{
+    height: 300px;
+}
+
+
+/* styling the top section the main mobe-info section */
+.mobe-top-content{
+    padding-right: 100px;
+    padding-left: 161px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* styling the top section the main mobe-info section */
+.mobe-top-content >p{
+    font-size: 15px;
+    color: #C8F069;
+    font-family: WorkSansbold;
+    padding-bottom: 10px;
+}
+
+
+/* styling the top section the main mobe-info section */
+.mobe-top-content > h2{
+		font-size: 55px;
+    font-family: Noticabold;
+    color: #EEF2E3 ;
+    padding-bottom: 23px;
+}
+
+
+/* styling the top section the main mobe-info section */
+.mobe-top-content  > span {
+    font-size: 18px;
+    color: #dbdbdb;
+    padding-bottom: 47px;
+    font-family: WorkSansregular;
+}
+
+
+
+/* styling the save your seat buttom */
+.mobe-top-content >a{
+    padding: 15px 38px;
+    font-size: 17px;
+    text-decoration: none;
+    color: #EFF3E4;
+    border: 0.5px solid #EFF3E4;
+    width: fit-content;
+    border-radius: 5px;
+    font-family: WorkSansregular;
+}
+
+/* here the styling for the bottom part is started */
+.mobe-bottom{
+    display: flex;
+    margin-top: 50px;
+    background-color: #2A6F2C;
+    padding: 50px;
+    border-radius: 16px;
+}
+
+
+/* this is the styling left side section of the lower section */
+.platform-overview > p{
+    font-size: 15px;
+    color: #C8F069;
+    font-family: WorkSansbold;
+    padding-bottom: 10px;
+}
+
+/* this is the styling left side section of the lower section */
+.platform-overview > h2{
+    font-size: 48px;
+    font-family: Noticabold;
+    color: #EEF2E3 ;
+    padding-bottom: 23px;
+}
+
+/* this is the styling left side section of the lower section */
+.platform-overview > span{
+    font-size: 18px;
+    color: #dbdbdb;
+    padding-bottom: 47px;
+    font-family: WorkSansregular;
+}
+
+/* this is the styling left side section of the lower section */
+.platform-overview > a{
+    padding: 15px 26px;
+    font-size: 22px;
+    text-decoration: none;
+    color: #EFF3E4;
+    border: 0.5px solid #EFF3E4;
+    width: fit-content;
+    border-radius: 5px;
+    font-family: WorkSansregular;
+}
+
+/* this is the styling left side section of the lower section */
+.platform-overview{
+    margin-top: 65px;
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* this is the styling for the grid items in the lower section */
+.platform-grid{
+    height: 552px;
+    padding-left: 115px;
+    width: 60%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+}
+
+/* styling the grid items in the lower mobe-info section */
+.item1{
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: start;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #C8F069;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border-radius: 20px;
+}
+
+/* styling the grid items in the lower mobe-info section */
+.item2{
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: start;
+    justify-content: flex-end;
+    flex-direction: column;
+    border: 12px solid #2A6F2C;
+    background-color: #C8F069;
+    grid-row-start: 4;
+    grid-row-end: 10;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    border-radius: 20px;
+}
+
+/* styling the grid items in the lower mobe-info section */
+.item3{
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: start;
+    justify-content: flex-end;
+    flex-direction: column;
+    border:12px solid #2A6F2C;
+    background-color: #C8F069;
+    grid-row-start: 1;
+    grid-row-end: 7;
+    grid-column-start: 4;
+    grid-column-end: 11;
+    border-radius: 20px;
+}
+
+/* styling the grid items in the lower mobe-info section */
+.item4{
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: start;
+    justify-content: flex-end;
+    flex-direction: column;
+    border-bottom:12px solid #2A6F2C;
+    background-color: #C8F069;
+    grid-row-start: 7;
+    grid-row-end: 10;
+    grid-column-start: 5;
+    grid-column-end: 8;
+    border-radius: 20px;
+}
+
+/* styling the grid items in the lower mobe-info section */
+.item5{
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: start;
+    justify-content: flex-end;
+    flex-direction: column;
+    border:12px solid #2A6F2C;
+    background-color: #C8F069;
+    grid-row-start: 3;
+    grid-row-end: 10;
+    grid-column-start: 8;
+    grid-column-end: 11;
+    border-radius: 20px;
+}
+
+/* here the media query starts for mobile and short device  */
+@media screen and (max-width: 576px) {
+.container{
+	max-width: 320px;
+	margin: 0 auto;
+}
+
+/* this is the the styling for the mobe-info top part */
+.mobe-top{
+	flex-direction: column;
+	justify-content: center;
+}
+
+/* this is the the styling for the mobe-info top part */
+.mobe-top-content{
+	margin: 0;
+	padding: 0;
+}
+
+/* this is the the styling for the mobe-info bottom part */
+.mobe-bottom{
+	flex-direction: column;
+}
+
+/* restyling the grid items */
+.platform-grid {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+
+
+/* resizing the button */
+.platform-overview > a{
+	padding: 13px 70px;
+	font-size: 12px;
+}
+
+/* restyling the platform overview section */
+.platform-overview {
+	width: 100%;
+}
+
+/* restyling the top image */
+.mobe-top >img {
+	width: 100%;
+	height: 100%;
+}
+}
